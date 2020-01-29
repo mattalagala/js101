@@ -3,7 +3,17 @@
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // 1) Create a function "helloWorld"
+
+function helloWorld () {
+
+return "Hello, world!"
+
+}
+
+helloWorld()
+
 // 2) Return the string "Hello, world!"
+
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -13,7 +23,11 @@
 
 function helloName (name) {
 
+  return "Hello, " + name + "!"
+
 }
+
+helloName("Bob")
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Return the length of the string "tarPitAbstract" defined below.
@@ -26,8 +40,10 @@ function abstractLength () {
     'We identify common causes of complexity and discuss general approaches which can be taken to eliminate them where they are accidental in nature. ' +
     'To make things more concrete we then give an outline for a potential complexity-minimizing approach based on functional programming and Codd’s relational model of data.'
 
+    return tarPitAbstract.length
 }
 
+abstractLength()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Return the string "chorus" in all capital letters.
 // HINT: use the .toUpperCase method
@@ -35,9 +51,10 @@ function abstractLength () {
 
 function makeLoud () {
   const chorus = 'Who let the dogs out?'
-
+return chorus.toUpperCase()
 }
 
+makeLoud()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Assume that a string is passed to the parameter "str" in the function below.
 // Return the value of "str" in all lower case letters.
@@ -45,5 +62,7 @@ function makeLoud () {
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase
 
 function makeQuiet (str) {
+  return str.toLowerCase()
 
 }
+makeQuiet("hello")
