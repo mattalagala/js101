@@ -11,7 +11,11 @@
 function threeFruits () {
   const fruits = ['Apple', 'Banana', 'Cherry']
 
+  return fruits
+
 }
+
+threeFruits()
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // An Array can contain multiple types. ie: strings, numbers, boolean, etc
@@ -20,7 +24,11 @@ function threeFruits () {
 function multipleTypes () {
   const diverseArray = ['Skateboard', null, 8.75, 'Eiffel Tower', 44, 7, true, null]
 
+  return diverseArray
+
 }
+
+multipleTypes()
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // You can access individual values of an array using bracket notation shown below.
@@ -31,6 +39,9 @@ function multipleTypes () {
 function indexAccess () {
   const people = ['Jenny', 'James', 'Jimmy', 'Jonny', 'Julia', 'Jessica']
 
+    return people[2]
+
+
   // console.assert() allows you to declare things that should be true; it's like
   // a sanity-check for your code.
   // Here we are confirming that array access works like we expect:
@@ -40,6 +51,8 @@ function indexAccess () {
 
   // return the third item from the "people" array here
 
+  
+
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -48,7 +61,7 @@ function indexAccess () {
 
 function useLength () {
   const arr = ['a', 'b', 'c']
-
+    return arr.length
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -57,6 +70,8 @@ function useLength () {
 
 function usePush () {
   let arr = ['a', 'b', 'c']
+      arr.push("d")
+      return arr
 
 }
 
@@ -66,7 +81,8 @@ function usePush () {
 
 function usePop () {
   let arr = ['a', 'b', 'c']
-
+      arr.pop("c")
+      return arr
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -85,6 +101,8 @@ function useIndexOf () {
 
   // return the index of the first instance of "T" here
 
+return arr.indexOf("T")
+
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -100,8 +118,9 @@ function useJoin () {
   console.assert(arr.join('') === 'abcdef') // pass an empty string to have no separator
 
   // create and return the string 'a-b-c-d-e-f' here
-
+    return arr.join("-")
 }
+
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Let's play with the alphabet using some Array and String methods.
