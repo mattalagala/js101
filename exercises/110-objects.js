@@ -11,16 +11,22 @@
 function threeNumbers () {
   const numbers = { numberOne: 1, numberTwo: 2, numberThree: 3 }
 
-}
+  return numbers
 
+}
+threeNumbers()
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // An Object can contain any type for each property. ie: strings, numbers, boolean, etc
 // Return the object of values in the function below.
 
 function manyTypes () {
-  const diverseObject = { name: 'banana', count: 42, isDelicious: true }
-
+  const diverseObject = { name: 'banana', count: 42, delicious: true }
+  return diverseObject 
+  
 }
+
+manyTypes()
+
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // You can access individual values of an object using bracket notation shown below.
@@ -31,6 +37,8 @@ function manyTypes () {
 function keyAccess () {
   const bestFruit = { name: 'banana', count: 42, isDelicious: true }
 
+  
+
   // console.assert() allows you to declare things that should be true; it's like
   // a sanity-check for your code.
   // Here we are confirming that object access works like we expect:
@@ -39,7 +47,7 @@ function keyAccess () {
   console.assert(bestFruit['isDelicious'] === true)
 
   // return the name of the bestFruit Object here.
-
+  return bestFruit.name
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -51,12 +59,14 @@ function addKey () {
   const bestFruit = { name: 'banana', count: 42 }
 
   // Note that before a key is assigned it will always return `undefined`
-  console.assert(bestFruit['isDelicious'] === undefined)
-  bestFruit['isDelicious'] = true
-  console.assert(bestFruit['isDelicious'] === true)
+  console.assert(bestFruit['delicious'] === undefined)
+  bestFruit['delicious'] = true
+  console.assert(bestFruit['delicious'] === true)
 
   // Assign 'yellow' to the key 'color' of bestFruit here and return bestFruit
+    bestFruit.color='yellow'
 
+    return bestFruit
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -78,6 +88,18 @@ function largeObject () {
   }
 
   // create a bootcampStudent object here similar to bootcampInstructor and return it
+const bootcampStudent = {
+  name: 'Matt',
+  email: 'Matt@bootcamp.digitalcrafts',
+  age: 37,
+  heightFeet: 5.8,
+  favoriteColor: 'green',
+  homeTown: 'Houston',
+  pet: 'dog',
+  ownsCar: true
+
+}
+return bootcampStudent
 
 }
 
@@ -96,13 +118,14 @@ function nestedArray () {
       'salmon',
       'pho'
     ]
+    
   }
 
   // Note that you can chain the bracket notation to reach into the Object AND into the Array.
   console.assert(bootcampInstructor['favoriteFoods'][0] === 'chicken pot pie')
 
   // Return the second item of the nested array favoriteFoods
-
+  return bootcampInstructor['favoriteFoods'][1]
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -123,7 +146,7 @@ function dotNotation () {
       'pho'
     ]
   }
-
+return bootcampInstructor.name
   // Some examples of using dot notation vs bracket notation:
   console.assert(bootcampInstructor.name === 'Susan')
   console.assert(bootcampInstructor['name'] === 'Susan')
